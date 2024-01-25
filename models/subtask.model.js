@@ -1,19 +1,11 @@
 import mongoose from "mongoose";
 
 const subTaskInstance = mongoose.Schema({
-    task_id: {tye: Number, required: true},
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-    userId: { type: String, required: true },
-    completed: { type: Boolean, required: true }
+    task_id: {type: Number, required: true},
+    content: { type: String },
+    status: { type: Boolean, default: false }
 }, { timestamps: true });
 
 
-const Status = Object.freeze({
-    TODO: "todo",
-    IN_PROGRESS: "process",
-    DONE: "done"
-})
-
-const taskModel = mongoose.model("Task", taskInstance);
-export default taskModel;
+const subTaskModel = mongoose.model("SubTask", subTaskInstance);
+export default subTaskModel;
