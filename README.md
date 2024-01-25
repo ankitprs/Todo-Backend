@@ -8,9 +8,9 @@ Project Video LINK -
 
 run this in your terminal
 ```bash
-git clone https://github.com/your_username/OpeninApp.git
+git clone https://github.com/ankitprs/Todo-Backend.git
 
-cd TodoBackend
+cd Todo-Backend
 npm install
 ```
 Set up your environment variables:
